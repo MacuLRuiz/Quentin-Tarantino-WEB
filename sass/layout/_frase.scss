@@ -1,0 +1,18 @@
+.frase  {
+    grid-area: frase;
+    background-color:#F27405;
+    height: 50vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.frase p {
+    text-align: center;
+    font-size: 20px;
+    color: white;
+    white-space: pre;
+    line-height: 40px;
+
+
+}
