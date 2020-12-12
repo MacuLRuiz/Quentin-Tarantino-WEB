@@ -68,6 +68,74 @@ body {
   width: 100%;
 }
 
+@media screen and (max-width: 768px) {
+  .centrado {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    justify-items: center;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+  }
+  .centrado h1 {
+    display: none;
+    font-size: 70px;
+    letter-spacing: normal;
+  }
+  .portada img {
+    width: 500px;
+    position: relative;
+    top: 1rem;
+  }
+  #titulo-responsive {
+    display: inline;
+    font-size: 120px;
+    letter-spacing: normal;
+  }
+  .frase p {
+    font-size: 15px;
+  }
+  .container-carousel {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    height: 500px;
+  }
+  .container-carousel h2 {
+    font-size: 50px;
+  }
+  #cinta {
+    display: none;
+  }
+  #carouselExampleControls {
+    width: 100%;
+    -ms-grid-row: 2;
+    -ms-grid-column: 1;
+    grid-area: carousel;
+  }
+  .film {
+    width: 90%;
+  }
+  .film-container {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+  }
+  #menu-final ul {
+    width: 320px;
+  }
+}
+
 .multiverso {
   width: 100%;
   padding: 4rem;
@@ -892,7 +960,7 @@ footer {
           align-items: center;
 }
 
-.alinear {
+footer .alinear {
   margin-top: 1rem;
   display: -webkit-box;
   display: -ms-flexbox;
@@ -909,7 +977,7 @@ footer {
           align-items: center;
 }
 
-.alinear p {
+footer .alinear .alinear p {
   color: #F2F2F2;
   text-align: center;
   padding: 7px   30px;
@@ -944,7 +1012,6 @@ footer {
   color: #F2F2F2;
 }
 
-/* ------------------menu final----------------------------*/
 #menu-final :hover {
   color: #FFCC33;
 }

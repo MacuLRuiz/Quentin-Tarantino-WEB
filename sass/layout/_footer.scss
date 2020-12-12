@@ -6,21 +6,24 @@ footer  {
     flex-direction: column;
     justify-content: center;
     align-items: center;
+
+        .alinear {
+            margin-top: 1rem;
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+
+                .alinear p{
+                    color:#F2F2F2;
+                    text-align: center;
+                    padding: 7px   30px;
+                }
+        }
 }
 
-.alinear {
-    margin-top: 1rem;
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
-}
 
-.alinear p{
-    color:#F2F2F2;
-    text-align: center;
-    padding: 7px   30px;
-}
+
 
 
 #menu-final ul {
@@ -43,10 +46,7 @@ footer  {
 
 
 
-
-
-/* ------------------menu final----------------------------*/
-
+// HOVER
 
 
 #menu-final :hover {
