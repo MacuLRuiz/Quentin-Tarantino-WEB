@@ -1,0 +1,46 @@
+
+.multiverso {
+    width: 100%;
+    padding:    4rem;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+
+    .multiverso__contenedor {
+        width: 100%;
+        display: flex;
+        flex-direction: row;
+        justify-content: space-evenly;
+        align-items: center;
+        flex-wrap: wrap;
+        margin: 40px 0px;
+
+            .multiverso__contenedor__article {
+                @extend %article-multiverso;
+            }
+        
+        } 
+        
+    }
+
+    .universo {
+        background-color: $dark;
+        width: 50%;
+        height: 580px;
+        border-radius: 100%;
+        margin: 50px 0px;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        box-shadow: 5px 8px 10px 8px rgba(0,0,0,0.45);
+
+        .tv {
+            width: 50%;
+            
+        
+        }
+    
+    }
+
