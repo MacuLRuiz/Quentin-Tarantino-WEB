@@ -68,6 +68,10 @@ body {
   width: 100%;
 }
 
+li {
+  list-style: none;
+}
+
 @media screen and (max-width: 768px) {
   .centrado {
     display: -webkit-box;
@@ -977,7 +981,7 @@ footer .alinear {
           align-items: center;
 }
 
-footer .alinear .alinear p {
+.alinear p {
   color: #F2F2F2;
   text-align: center;
   padding: 7px   30px;
@@ -1000,6 +1004,7 @@ footer .alinear .alinear p {
 }
 
 #menu-final li a {
+  list-style: none;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -1007,7 +1012,6 @@ footer .alinear .alinear p {
   -webkit-box-direction: normal;
       -ms-flex-direction: column;
           flex-direction: column;
-  /* padding: 15px   30px; */
   text-decoration: none;
   color: #F2F2F2;
 }

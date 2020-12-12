@@ -12,17 +12,15 @@ footer  {
             display: flex;
             flex-direction: column;
             justify-content: center;
-            align-items: center;
-
-                .alinear p{
-                    color:#F2F2F2;
-                    text-align: center;
-                    padding: 7px   30px;
-                }
+            align-items: center;    
         }
 }
 
-
+.alinear p{
+    color:#F2F2F2;
+    text-align: center;
+    padding: 7px   30px;
+}
 
 
 
@@ -36,12 +34,14 @@ footer  {
     color:#F2F2F2;
 
 } 
+
 #menu-final li a {
+    list-style: none;
     display: flex;
     flex-direction: column;
-    /* padding: 15px   30px; */
     text-decoration: none;
     color:#F2F2F2;
+    
 }
 
 
