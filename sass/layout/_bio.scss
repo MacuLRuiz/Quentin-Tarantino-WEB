@@ -1,0 +1,105 @@
+#bio {
+    height: 600vh;
+    display: grid;
+    grid-template-columns: 50% 50%;
+    grid-template-rows: 10% 22.5% 22.5% 22.5%;
+    grid-template-areas: 
+    "biografia biografia"
+    "foto1 bio1"
+    "bio2 foto2"
+    "foto3 bio3"
+    "bio4 foto4";
+}
+
+.biografia {
+    grid-area: biografia;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+}
+.bio1 {
+    grid-area: bio1;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    padding: 5rem;
+}
+
+.bio2 {
+    grid-area: bio2;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    padding: 5rem;
+}
+
+.bio3 {
+    grid-area: bio3;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    padding: 5rem;
+}
+
+.bio4 {
+    grid-area: bio4;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    padding: 5rem;
+}
+
+
+
+.foto1 {
+    grid-area: foto1;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.img1 {
+    z-index: 1;
+    align-self: center;
+    position: relative;
+    top: 8rem;
+}
+
+.claqueta {
+    height: 250px;
+    z-index: 2;
+    position: relative;
+    bottom: 5rem;
+    right: 8rem;
+    transform: rotate(-10deg);
+}
+
+.foto2 {
+    grid-area: foto2;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+}
+
+.foto3 {
+    grid-area: foto3;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+}
+
+.foto4 {
+    grid-area: foto4;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+}
