@@ -1,18 +1,58 @@
 
 .frase  {
     grid-area: frase;
-    background-color: $orange;
+    background-color: $red;
     display: flex;
     justify-content: center;
     align-items: center;
 }
 
+// .frase p {
+//     text-align: center;
+//     font-size: 20px;
+//     color: white;
+//     white-space: pre-line;
+//     line-height: 40px;
+//     margin: 4rem;
+//   
+// }
+
+
 .frase p {
+    min-height: 5em;
+    padding   : 1em 4em;
+    position  : relative;
     text-align: center;
     font-size: 20px;
     color: white;
-    white-space: pre;
+    white-space: pre-line;
     line-height: 40px;
+    margin: 4rem;
+    position: relative;
+    bottom: 1rem;
+    
+}
 
 
+.frase::before,
+.frase::after {
+    position: relative;
+    height  : 3rem;
+    font: 6rem/100% Georgia, "Times New Roman", Times, serif;
+}
+
+
+.frase::before {
+    content: '“';
+    color: $white;
+    bottom    : 3rem;
+    left   : 6rem;
+}
+
+
+.frase::after {
+    content: '”';
+    top : 4rem;
+    right  : 8rem;
+    color: $white;
 }
