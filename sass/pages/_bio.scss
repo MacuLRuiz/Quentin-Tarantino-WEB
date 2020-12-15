@@ -19,39 +19,32 @@
 
 }
 .bio1 {
-    grid-area: bio1;
     display: flex;
     flex-direction: column;
     justify-content: center;
     align-items: center;
-    padding: 5rem;
+    padding: 4rem;
+    
+    & p {
+        text-align: justify;
+
+    }
 }
 
 .bio2 {
     grid-area: bio2;
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
-    padding: 5rem;
+    @extend .bio1
 }
 
 .bio3 {
     grid-area: bio3;
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
-    padding: 5rem;
+    @extend .bio1
+
 }
 
 .bio4 {
     grid-area: bio4;
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
-    padding: 5rem;
+    @extend .bio1
 }
 
 
