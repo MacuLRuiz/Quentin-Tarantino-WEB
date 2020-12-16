@@ -5,14 +5,15 @@
 }
 
 .contenedorform {
-    margin-top: 0rem;
     display: grid;
     grid-template-columns: 50% 50%;
-    grid-template-rows: 10% 80%;
+    grid-template-rows: 10% 90%;
     grid-template-areas: 
         "text foto"
         "form foto";
 }
+
+
 
 #form-contacto {
     grid-area: form;
@@ -24,7 +25,6 @@
     margin-top: 1rem;
     text-align: center;
     padding-top: 1rem;
-    z-index: 2;
     position: relative;
     border-radius: 20px;
     box-shadow:3px 7px 8px 1px rgba(0,0,0,0.80);
@@ -32,18 +32,21 @@
 
 .textform {
     grid-area: text;
+    display: flex;
+    justify-content: start;
     width: 80%;
     text-align: center;
     margin-left: auto;
 }
 
 #contacto img {
-    grid-area: foto;
-    height: 650px;
-    z-index: 1;
-    position: relative;
-    right: 30rem;
-    bottom: 6.9rem;
+        grid-area: foto;
+        height: 650px;
+        z-index: 1;
+        position: relative;
+        right: 30rem;
+        bottom: 6.9rem;
+    
 }
 
 #mensaje {
@@ -87,4 +90,59 @@
 .enviar:hover {
     background-color: #FFCC33;
     color: #081826;
+}
+
+
+
+@media screen and (max-width: 768px) {
+
+    #contacto {
+        overflow: hidden;
+    }
+
+    .contenedorform {
+        display: grid;
+        grid-template-columns: 1fr;
+        grid-template-rows: 20% 80%;
+        grid-template-areas: 
+            "text"
+            "form";
+    }
+    
+    
+    #form-contacto {
+        grid-area: form;
+        background-color:  #081826;
+        color: #F2F2F2;
+        width: 80%;
+        height: 50vh;
+        text-align: center;
+        padding-top: 1rem;
+        border-radius: 20px;
+        box-shadow:3px 7px 8px 1px rgba(0,0,0,0.80);
+    }
+    
+    .textform {
+        grid-area: text;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        width: 80%;
+        text-align: justify;
+    }
+    
+    #contacto img {
+        display: none;
+        
+    }
+    
+    #mensaje {
+        height: 80px;
+        width: 300px;
+        border-radius: 10px;
+        margin: 1rem 0rem;
+        background-color:#F2F2F2;
+    }
+    
+
 }
