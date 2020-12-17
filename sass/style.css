@@ -50,20 +50,6 @@ a {
   margin: 0.5rem;
 }
 
-.multiverso__contenedor__article p {
-  font-size: 1rem;
-  line-height: 1.5rem;
-  text-align: justify;
-}
-
-.multiverso__contenedor__article p strong {
-  font-family: "changa one";
-  font-size: 2rem;
-  color: #990033;
-  text-align: center;
-  margin-bottom: 4rem;
-}
-
 h1 {
   font-family: 'Changa One';
   font-size: 200px;
@@ -81,7 +67,6 @@ h2 {
   text-align: center;
   letter-spacing: 2px;
   margin: 50px;
-  padding-bottom: 3rem;
 }
 
 @media screen and (max-width: 768px) {
@@ -102,13 +87,13 @@ h2 {
   background-color: #F2F2F2;
   -webkit-box-shadow: 3px 7px 8px 1px rgba(0, 0, 0, 0.25);
           box-shadow: 3px 7px 8px 1px rgba(0, 0, 0, 0.25);
-  padding: 40px;
+  padding: 2rem;
   margin: 20px;
 }
 
 .multiverso {
   width: 100%;
-  padding: 4rem;
+  padding: 2rem;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -122,6 +107,11 @@ h2 {
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
+}
+
+.multiverso p {
+  text-align: justify;
+  margin: 0rem 4rem;
 }
 
 .multiverso .multiverso__contenedor {
@@ -146,9 +136,9 @@ h2 {
 
 .universo {
   background-color: #081826;
-  width: 50%;
-  height: 580px;
-  border-radius: 100%;
+  width: 400px;
+  height: 400px;
+  border-radius: 50%;
   margin: 50px 0px;
   display: -webkit-box;
   display: -ms-flexbox;
@@ -169,6 +159,40 @@ h2 {
 
 .universo .tv {
   width: 50%;
+}
+
+.multiverso__contenedor__article p {
+  font-size: 1rem;
+  line-height: 1.5rem;
+  text-align: justify;
+}
+
+.multiverso__contenedor__article p strong {
+  font-family: "changa one";
+  font-size: 2rem;
+  color: #990033;
+  text-align: center;
+  margin-bottom: 2rem;
+}
+
+@media screen and (max-width: 768px) {
+  .universo {
+    width: 300px;
+    height: 300px;
+  }
+  .multiverso {
+    padding: 0.2rem;
+  }
+  .multiverso__contenedor {
+    margin: 20px 0px;
+  }
+  .multiverso__contenedor p {
+    margin: 0px;
+  }
+  .multiverso__contenedor__article p strong {
+    text-align: justify;
+    margin-bottom: 5rem;
+  }
 }
 
 #peliculas {
@@ -1036,7 +1060,6 @@ header {
   background: linear-gradient(to right, #ffb347, #ffcc33);
 }
 
-/* ----------------------------------Centrado Header--------------------*/
 .centrado {
   width: 100%;
   display: -webkit-box;

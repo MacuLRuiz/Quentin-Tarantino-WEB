@@ -1,34 +1,44 @@
 
 .multiverso {
     width: 100%;
-    padding:    4rem;
+    padding:    2rem;
     display: flex;
     flex-direction: column;
     justify-content: center;
     align-items: center;
-
-    .multiverso__contenedor {
-        width: 100%;
-        display: flex;
-        flex-direction: row;
-        justify-content: space-evenly;
-        align-items: center;
-        flex-wrap: wrap;
-        margin: 40px 0px;
-
-            .multiverso__contenedor__article {
-                @extend %article-multiverso;
-            }
-        
-        } 
-        
+    
+    & p {
+        text-align: justify;
+        margin: 0rem 4rem;
     }
+
+    
+    & .multiverso__contenedor {
+    width: 100%;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-evenly;
+    align-items: center;
+    flex-wrap: wrap;
+    margin: 40px 0px;
+
+        & .multiverso__contenedor__article {
+            @extend %article-multiverso;
+        }
+    } 
+
+        
+}
+
+
 
     .universo {
         background-color: $dark;
-        width: 50%;
-        height: 580px;
-        border-radius: 100%;
+        width: 400px;
+        height: 400px;
+        -moz-border-radius: 50%;
+        -webkit-border-radius: 50%;
+        border-radius: 50%;
         margin: 50px 0px;
         display: flex;
         flex-direction: column;
@@ -44,3 +54,56 @@
     
     }
 
+
+    .multiverso__contenedor__article p {
+
+        font-size: 1rem;
+        line-height: 1.5rem;
+        text-align: justify;
+    
+    }
+    
+    .multiverso__contenedor__article p strong {
+    
+        font-family: "changa one";
+        font-size: 2rem;
+        color: $red;
+        text-align: center;
+        margin-bottom: 2rem;
+        }
+    
+
+// MEDIA QUERIES
+
+
+@media screen and (max-width: 768px) {
+
+    .universo {
+        width: 300px;
+        height: 300px;
+    }
+
+    .multiverso {
+    padding:    0.2rem;
+
+    }
+        
+    .multiverso__contenedor {
+    margin: 20px 0px;
+    
+    }
+
+    .multiverso__contenedor p {
+
+    margin: 0px;
+    
+    }
+    
+    .multiverso__contenedor__article p strong {
+    
+    text-align: justify;
+    margin-bottom: 5rem;
+    
+    }
+
+}

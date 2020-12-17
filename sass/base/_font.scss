@@ -30,25 +30,6 @@
     margin: 0.5rem;
 }
 
-
-.multiverso__contenedor__article p {
-
-    font-size: 1rem;
-    line-height: 1.5rem;
-    text-align: justify;
-
-}
-
-.multiverso__contenedor__article p strong {
-
-    font-family: "changa one";
-    font-size: 2rem;
-    color: $red;
-    text-align: center;
-    margin-bottom: 4rem;
-
-    }
-
     h1{
         font-family: 'Changa One';
         font-size: 200px; 
@@ -66,10 +47,9 @@ h2 {
         text-align: center;
         letter-spacing: 2px;
         margin: 50px;
-        padding-bottom: 3rem;
 }
 
-
+// MEDIA QUERIES
 
 @media screen and (max-width: 768px) {
 
