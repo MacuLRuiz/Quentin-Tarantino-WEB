@@ -100,24 +100,24 @@
 
     #contacto {
         overflow: hidden;
+        height: 150vh;
     }
 
     .contenedorform {
         display: flex;
         flex-direction: column;
         justify-content: center;
+        align-items: center;
     }
     
     
     #form-contacto {
         background-color:  #081826;
         color: #F2F2F2;
-        width: 80%;
+        width: 90%;
         height: 50vh;
         text-align: center;
-        padding-top: 1rem;
-        border-radius: 20px;
-        box-shadow:3px 7px 8px 1px rgba(0,0,0,0.80);
+        margin: 20px auto;
     }
     
     .textform {
@@ -125,11 +125,18 @@
         justify-content: center;
         align-items: center;
         width: 80%;
-        text-align: justify;
+        margin: 20px auto;
+        & p {
+            text-align: justify;
+        }
     }
     
     #contacto img {
-        display: none;
+        height: 400px;
+        position: relative;
+        right: 60px;
+        bottom: 70px;
+
         
     }
     

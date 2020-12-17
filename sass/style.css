@@ -468,6 +468,7 @@ h2 {
 @media screen and (max-width: 768px) {
   #contacto {
     overflow: hidden;
+    height: 150vh;
   }
   .contenedorform {
     display: -webkit-box;
@@ -480,17 +481,17 @@ h2 {
     -webkit-box-pack: center;
         -ms-flex-pack: center;
             justify-content: center;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
   }
   #form-contacto {
     background-color: #081826;
     color: #F2F2F2;
-    width: 80%;
+    width: 90%;
     height: 50vh;
     text-align: center;
-    padding-top: 1rem;
-    border-radius: 20px;
-    -webkit-box-shadow: 3px 7px 8px 1px rgba(0, 0, 0, 0.8);
-            box-shadow: 3px 7px 8px 1px rgba(0, 0, 0, 0.8);
+    margin: 20px auto;
   }
   .textform {
     display: -webkit-box;
@@ -503,10 +504,16 @@ h2 {
         -ms-flex-align: center;
             align-items: center;
     width: 80%;
+    margin: 20px auto;
+  }
+  .textform p {
     text-align: justify;
   }
   #contacto img {
-    display: none;
+    height: 400px;
+    position: relative;
+    right: 60px;
+    bottom: 70px;
   }
   #mensaje {
     height: 80px;
