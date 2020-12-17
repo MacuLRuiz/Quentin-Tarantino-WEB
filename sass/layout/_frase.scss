@@ -62,18 +62,21 @@
 @media screen and (max-width: 768px) {
 
     .frase  {
-        height: 50vh;
+        height: 30vh;
         overflow: hidden;
     }
 
     .frase p {
         text-align: center;
-        font-size: 15px;
-        color: white;
-        line-height: 40px;
+        font-size: 1rem;
+        line-height: 30px;
         white-space: pre-line;
         margin: 0px;
         
+    }
+
+    .frase p strong {
+        margin-top: 1rem;
     }
 
     .frase::before,

@@ -1073,11 +1073,10 @@ header {
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
-  grid-area: centrado;
   z-index: 1;
 }
 
-#titulo-responsive {
+.titulo-ppal {
   display: none;
 }
 
@@ -1102,19 +1101,34 @@ header {
             align-items: center;
   }
   .centrado h1 {
-    display: block;
-    font-size: 70px;
+    display: none;
+  }
+  .titulo-ppal {
+    width: 100%;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    justify-self: space-evenly;
+  }
+  .titulo-ppal p {
+    font-size: 100px;
     letter-spacing: normal;
+    font-family: 'Changa One';
+    text-align: center;
+    color: #990033;
+    letter-spacing: 10px;
+    line-height: 0;
+    text-shadow: 7px 0px 0px rgba(255, 46, 18, 0.61);
+    margin: 2.1rem;
   }
   .portada img {
-    width: 500px;
+    width: 600px;
     position: relative;
     top: 1rem;
-  }
-  #titulo-responsive {
-    display: inline;
-    font-size: 120px;
-    letter-spacing: normal;
   }
 }
 
@@ -1250,16 +1264,18 @@ footer .alinear {
 
 @media screen and (max-width: 768px) {
   .frase {
-    height: 50vh;
+    height: 30vh;
     overflow: hidden;
   }
   .frase p {
     text-align: center;
-    font-size: 15px;
-    color: white;
-    line-height: 40px;
+    font-size: 1rem;
+    line-height: 30px;
     white-space: pre-line;
     margin: 0px;
+  }
+  .frase p strong {
+    margin-top: 1rem;
   }
   .frase::before,
   .frase::after {
@@ -1309,5 +1325,12 @@ footer .alinear {
 
 #menu li:hover .icono-menu {
   opacity: 100%;
+}
+
+@media screen and (max-width: 768px) {
+  #menu {
+    z-index: 2;
+    margin: 10px 0px;
+  }
 }
 /*# sourceMappingURL=style.css.map */

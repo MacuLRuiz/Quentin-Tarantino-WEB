@@ -9,17 +9,17 @@ header{
 // CENTRADO HEADER
 
 
+
 .centrado {
     width: 100%;
 display: flex;
 flex-direction: column;
 justify-items: center;
 align-items: center;
-    grid-area: centrado;
-    z-index: 1;
+z-index: 1;
 }
 
-#titulo-responsive {
+.titulo-ppal {
     display: none;
 }
 
@@ -42,21 +42,35 @@ align-items: center;
     }
 
     .centrado h1{
-        display: block;
-        font-size: 70px;
+        display:  none;
+    }
+
+    .titulo-ppal {
+        width: 100%;;
+        display: flex;
+        flex-direction: column;
+        justify-self: space-evenly;
+        
+    }
+
+    .titulo-ppal p {
+
+        font-size: 100px;
         letter-spacing: normal;
+        font-family: 'Changa One';
+        text-align: center;
+        color:  #990033;
+        letter-spacing: 10px;
+        line-height: 0;
+        text-shadow:7px 0px 0px rgba(255,46,18,0.61);
+        margin: 2.1rem;
     }
 
     .portada img {
-        width: 500px;
+        width: 600px;
         position: relative;
         top: 1rem;
     }
 
-    #titulo-responsive {
-        display: inline;
-        font-size: 120px;
-        letter-spacing: normal;
-    }
 
 }
