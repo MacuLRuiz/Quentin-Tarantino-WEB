@@ -104,3 +104,39 @@ box-shadow: 3px 7px 8px 1px rgba(0,0,0,0.35);
 
 }
 
+
+
+
+@media screen and (max-width: 768px) {
+
+
+    .container-carousel {
+
+        display: flex;
+        flex-direction: column;
+        height: 500px;
+    }
+
+    .container-carousel h2 {
+        font-size: 50px;
+    }
+
+    #cinta {
+        display: none;
+    }
+
+    #carouselExampleControls {
+        width: 100%;
+        grid-area: carousel;
+    
+    }
+
+    .film{
+        width: 90%;
+    }
+
+    .film-container {
+        flex-direction: column;
+    }
+
+}

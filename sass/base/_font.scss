@@ -68,3 +68,18 @@ h2 {
         margin: 50px;
         padding-bottom: 3rem;
 }
+
+
+
+@media screen and (max-width: 768px) {
+
+    .texto h2, h2 {
+        font-size: 3rem;
+        letter-spacing: 4px;
+        word-spacing: 6px;
+        margin: 2rem;
+        padding: 0px;
+    }
+
+    
+}

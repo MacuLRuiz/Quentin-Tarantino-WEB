@@ -53,3 +53,12 @@ footer  {
     color:  #FFCC33
 }
 
+// MEDIA QUERIES  
+
+@media screen and (max-width: 768px) {
+
+    #menu-final ul {
+        width: 320px;
+    }
+
+}

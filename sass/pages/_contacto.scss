@@ -101,17 +101,13 @@
     }
 
     .contenedorform {
-        display: grid;
-        grid-template-columns: 1fr;
-        grid-template-rows: 20% 80%;
-        grid-template-areas: 
-            "text"
-            "form";
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
     }
     
     
     #form-contacto {
-        grid-area: form;
         background-color:  #081826;
         color: #F2F2F2;
         width: 80%;
@@ -123,7 +119,6 @@
     }
     
     .textform {
-        grid-area: text;
         display: flex;
         justify-content: center;
         align-items: center;
