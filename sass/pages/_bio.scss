@@ -38,18 +38,18 @@
 
 .bio2 {
     grid-area: bio2;
-    @extend .bio1
+    @extend .bio1;
 }
 
 .bio3 {
     grid-area: bio3;
-    @extend .bio1
+    @extend .bio1;
 
 }
 
 .bio4 {
     grid-area: bio4;
-    @extend .bio1
+    @extend .bio1;
 }
 
 
@@ -63,30 +63,55 @@
     margin-bottom: 50px;
 }
 
-
-.claqueta {
-    height: 200px;
-    z-index: 2;
-    position: relative;
-    bottom: 2rem;
-    right: 8rem;
-    transform: rotate(-10deg);
-}
-
 .foto2 {
     grid-area: foto2;
-    @extend .foto1
+    @extend .foto1;
 
 
 }
 
 .foto3 {
     grid-area: foto3;
-    @extend .foto1
+    @extend .foto1;
 
 }
 
 .foto4 {
     grid-area: foto4;
-    @extend .foto1
+    @extend .foto1;
+}
+
+
+
+@media screen and (max-width: 768px) {
+
+    #bio {
+        display: flex;
+        flex-direction: column;
+        grid-area: unset;
+
+    }
+
+    .biografia {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+
+    }
+
+
+    .bio1 {
+        padding: 2rem;
+        margin-bottom: 20px;
+    }
+
+
+    .foto1 {
+        margin-bottom: 25px;
+    }
+
+    .foto1 img {
+        width: 70%;
+    }
+    
 }
