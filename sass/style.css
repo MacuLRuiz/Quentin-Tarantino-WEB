@@ -28,7 +28,7 @@ a {
   font-size: 5rem;
   color: #990033;
   text-align: center;
-  letter-spacing: 4px;
+  letter-spacing: 1px;
   word-spacing: 6px;
 }
 
@@ -65,7 +65,7 @@ h2 {
   font-size: 70px;
   color: #990033;
   text-align: center;
-  letter-spacing: 2px;
+  letter-spacing: 1px;
   margin: 50px;
 }
 
@@ -87,7 +87,7 @@ h2 {
   background-color: #F2F2F2;
   -webkit-box-shadow: 3px 7px 8px 1px rgba(0, 0, 0, 0.25);
           box-shadow: 3px 7px 8px 1px rgba(0, 0, 0, 0.25);
-  padding: 2rem;
+  padding: 4rem;
   margin: 20px;
 }
 
@@ -111,7 +111,6 @@ h2 {
 
 .multiverso p {
   text-align: justify;
-  margin: 0rem 4rem;
 }
 
 .multiverso .multiverso__contenedor {
@@ -165,6 +164,31 @@ h2 {
   font-size: 1rem;
   line-height: 1.5rem;
   text-align: justify;
+}
+
+.imagenes {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  margin: 4rem 0rem;
+}
+
+.imagenes img {
+  width: 25%;
+  -webkit-clip-path: circle(48.9% at 50% 50%);
+          clip-path: circle(48.9% at 50% 50%);
+}
+
+.imagenes img:hover {
+  -webkit-filter: grayscale(80%);
+          filter: grayscale(80%);
 }
 
 .multiverso__contenedor__article p strong {
@@ -377,15 +401,16 @@ h2 {
   background-color: #081826;
   color: #F2F2F2;
   width: 80%;
-  height: 50vh;
+  height: 55vh;
   margin-left: auto;
   margin-top: 1rem;
   text-align: center;
-  padding-top: 1rem;
+  padding: 2rem;
   position: relative;
   border-radius: 20px;
   -webkit-box-shadow: 3px 7px 8px 1px rgba(0, 0, 0, 0.8);
           box-shadow: 3px 7px 8px 1px rgba(0, 0, 0, 0.8);
+  z-index: 2;
 }
 
 .textform {
@@ -395,12 +420,15 @@ h2 {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
-  -webkit-box-pack: start;
-      -ms-flex-pack: start;
-          justify-content: start;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
   width: 80%;
-  text-align: center;
   margin-left: auto;
+}
+
+.textform p {
+  text-align: justify;
 }
 
 #contacto img {
@@ -408,10 +436,10 @@ h2 {
   -ms-grid-row-span: 2;
   -ms-grid-column: 2;
   grid-area: foto;
-  height: 650px;
+  height: 700px;
   z-index: 1;
   position: relative;
-  right: 30rem;
+  right: 35rem;
   bottom: 6.9rem;
 }
 

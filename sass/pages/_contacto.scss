@@ -20,31 +20,34 @@
     background-color:  #081826;
     color: #F2F2F2;
     width: 80%;
-    height: 50vh;
+    height: 55vh;
     margin-left: auto;
     margin-top: 1rem;
     text-align: center;
-    padding-top: 1rem;
+    padding: 2rem;
     position: relative;
     border-radius: 20px;
     box-shadow:3px 7px 8px 1px rgba(0,0,0,0.80);
+    z-index: 2;
 }
 
 .textform {
     grid-area: text;
     display: flex;
-    justify-content: start;
+    justify-content: center;
     width: 80%;
-    text-align: center;
     margin-left: auto;
+    & p {
+        text-align: justify;
+    }
 }
 
 #contacto img {
         grid-area: foto;
-        height: 650px;
+        height: 700px;
         z-index: 1;
         position: relative;
-        right: 30rem;
+        right: 35rem;
         bottom: 6.9rem;
     
 }

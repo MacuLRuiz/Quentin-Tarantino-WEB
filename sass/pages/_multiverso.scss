@@ -9,7 +9,6 @@
     
     & p {
         text-align: justify;
-        margin: 0rem 4rem;
     }
 
     
@@ -60,6 +59,25 @@
         font-size: 1rem;
         line-height: 1.5rem;
         text-align: justify;
+    
+    }
+
+
+
+
+    .imagenes {
+        display: flex;
+        flex-direction: row;
+        justify-content: space-between;
+        margin: 4rem 0rem;
+    }
+
+    .imagenes img {
+
+        width: 25%;
+        clip-path: circle(48.9% at 50% 50%);
+
+        &:hover {filter: grayscale(80%);}
     
     }
     
