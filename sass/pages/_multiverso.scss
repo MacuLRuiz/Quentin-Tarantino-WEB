@@ -80,6 +80,24 @@
         &:hover {filter: grayscale(80%);}
     
     }
+
+
+    .imagenes_apple {
+
+        display: flex;
+        flex-direction: row;
+        justify-content: center;
+        margin: 4rem 0rem;
+    }
+
+    .imagenes_apple img {
+
+        width: 30%;
+        clip-path: circle(48.9% at 50% 50%);
+
+        &:hover {filter: grayscale(80%);}
+    
+    }
     
     .multiverso__contenedor__article p strong {
     
@@ -90,6 +108,14 @@
         margin-bottom: 2rem;
         }
     
+
+
+
+
+
+
+
+
 
 // MEDIA QUERIES
 

@@ -191,6 +191,31 @@ h2 {
           filter: grayscale(80%);
 }
 
+.imagenes_apple {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  margin: 4rem 0rem;
+}
+
+.imagenes_apple img {
+  width: 30%;
+  -webkit-clip-path: circle(48.9% at 50% 50%);
+          clip-path: circle(48.9% at 50% 50%);
+}
+
+.imagenes_apple img:hover {
+  -webkit-filter: grayscale(80%);
+          filter: grayscale(80%);
+}
+
 .multiverso__contenedor__article p strong {
   font-family: "changa one";
   font-size: 2rem;
