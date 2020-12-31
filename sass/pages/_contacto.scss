@@ -2,98 +2,100 @@
     width: 100%;
     height: 110vh;
     overflow: hidden;
-}
 
-.contenedorform {
-    display: grid;
-    grid-template-columns: 50% 50%;
-    grid-template-rows: 10% 90%;
-    grid-template-areas: 
-        "text foto"
-        "form foto";
-}
+    & .contenedorform {
+        display: grid;
+        grid-template-columns: 50% 50%;
+        grid-template-rows: 10% 90%;
+        grid-template-areas: 
+            "text foto"
+            "form foto";
 
+        & img {
+            grid-area: foto;
+            height: 700px;
+            z-index: 1;
+            position: relative;
+            right: 35rem;
+            bottom: 6.9rem;
+            }
+        
+        & .textform {
+            grid-area: text;
+            display: flex;
+            justify-content: center;
+            width: 80%;
+            margin-left: auto;
 
+            & p {
+            text-align: justify;
+            }
+        }
 
-#form-contacto {
-    grid-area: form;
-    background-color:  #081826;
-    color: #F2F2F2;
-    width: 80%;
-    height: 55vh;
-    margin-left: auto;
-    margin-top: 1rem;
-    text-align: center;
-    padding: 2rem;
-    position: relative;
-    border-radius: 20px;
-    box-shadow:3px 7px 8px 1px rgba(0,0,0,0.80);
-    z-index: 2;
-}
-
-.textform {
-    grid-area: text;
-    display: flex;
-    justify-content: center;
-    width: 80%;
-    margin-left: auto;
-    & p {
-        text-align: justify;
-    }
-}
-
-#contacto img {
-        grid-area: foto;
-        height: 700px;
-        z-index: 1;
+    & #form-contacto {
+        grid-area: form;
+        background-color:  #081826;
+        color: #F2F2F2;
+        width: 80%;
+        height: 55vh;
+        margin-left: auto;
+        margin-top: 1rem;
+        text-align: center;
+        padding: 2rem;
         position: relative;
-        right: 35rem;
-        bottom: 6.9rem;
+        border-radius: 20px;
+        box-shadow:3px 7px 8px 1px rgba(0,0,0,0.80);
+        z-index: 2;
+
+        & #mensaje {
+            height: 80px;
+            width: 400px;
+            border-radius: 10px;
+            margin: 1rem 0rem;
+            background-color:#F2F2F2;
+            }
+        
+        & .enviar {
+            text-align: center;
+            text-decoration: none;
+            background-color: #F2F2F2 ;
+            color:  #081826;
+            font-size: 16px;
+            font-weight: bold;
+            border-style: none;
+            border-radius: 6px;
+            padding: 6px 12px;
+            transform: perspective(1px) translateZ(0);
+            box-shadow: 0 0 1px rgba(0, 0, 0, 0);
+            overflow: hidden;
+            transition-duration: 0.3s;
+            transition-property: color, background-color;
+
+            &:hover {
+                background-color: #FFCC33;
+                color: #081826;
+            }
+            
+
+            }
+        
+        & #mail, #name  {
+            grid-area: form;
+            align-self: flex-end;
+            color: black;
+            width: 200px;
+            height: 25px;
+            background-color: #F2F2F2;
+            border-style: none;
+            border-radius: 5px;
+            margin: 1rem;
+            }
+        }
+    }
     
 }
 
-#mensaje {
-    height: 80px;
-    width: 400px;
-    border-radius: 10px;
-    margin: 1rem 0rem;
-    background-color:#F2F2F2;
-}
 
-.enviar {
-    text-align: center;
-    text-decoration: none;
-    background-color: #F2F2F2 ;
-    color:  #081826;
-    font-size: 16px;
-    font-weight: bold;
-    border-style: none;
-    border-radius: 6px;
-    padding: 6px 12px;
-    transform: perspective(1px) translateZ(0);
-    box-shadow: 0 0 1px rgba(0, 0, 0, 0);
-    overflow: hidden;
-    transition-duration: 0.3s;
-    transition-property: color, background-color;
-}
-
-#mail, #name  {
-    grid-area: form;
-    align-self: flex-end;
-    color: black;
-    width: 200px;
-    height: 25px;
-    background-color: #F2F2F2;
-    border-style: none;
-    border-radius: 5px;
-    margin: 1rem;
-}
-
-
-.enviar:hover {
-    background-color: #FFCC33;
-    color: #081826;
-}
 
 // MEDIA QUERIES
 
@@ -118,7 +120,6 @@
         background-color:  #081826;
         color: #F2F2F2;
         width: 90%;
-        height: 50vh;
         text-align: center;
         margin: 20px auto;
     }
@@ -145,7 +146,7 @@
     
     #mensaje {
         height: 80px;
-        width: 300px;
+        width: 200px;
         border-radius: 10px;
         margin: 1rem 0rem;
         background-color:#F2F2F2;

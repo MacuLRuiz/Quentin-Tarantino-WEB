@@ -1,18 +1,12 @@
 
-// @mixin parrafo ($size, $margin) {
-//     font-size: $size;
-//     text-align: $align;
-//     line-height: 1.5rem;
-//     margin: $margin;
-// }
-
 %article-multiverso {
     width: 90%;
     box-sizing: border-box;
     border-radius: 20px;
-    background-color: $white;
+    background-color: $yellow;
     box-shadow: 3px 7px 8px 1px rgba(0,0,0,0.25);
-    padding: 2rem;
+    padding: 0rem 2rem;
+    padding-top: 4rem;
     margin: 20px;
 
 }
