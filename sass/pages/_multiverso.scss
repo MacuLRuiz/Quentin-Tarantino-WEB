@@ -9,6 +9,7 @@
     
     & p {
         text-align: justify;
+        margin: 0rem 4rem;
     }
 
     
@@ -58,64 +59,67 @@
 
         font-size: 1rem;
         line-height: 1.5rem;
+        margin-bottom: 2rem;
         text-align: justify;
+
+        & span {
+            font-family: "changa one";
+            font-size: 3rem;
+            color: $red;
+            text-align: right;
+            margin-bottom: 2rem;
+            }
     
     }
 
 
-
-
     .imagenes {
+        width: 100%;
         display: flex;
         flex-direction: row;
         justify-content: space-between;
         margin: 4rem 0rem;
     }
 
-    .imagenes img {
-
-        width: 25%;
-        clip-path: circle(48.9% at 50% 50%);
-
-        &:hover {filter: grayscale(80%);}
+    .info-contenedor {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-content: center;
     
-    }
+        & p {
+            opacity: 100%;
+            font-family: "changa one";
+            color: $red;
+            font-size: 3rem;
+            text-align: center;
+            line-height: 2.5rem;
+            position: relative;
+            bottom: 3rem;
+            margin: 0rem 2rem;
+        }
 
-
-    .imagenes_apple {
+        & img {
+    
+            width: 300px;
+            opacity: 90%;
+            clip-path: circle(48.9% at 50% 50%);
+            filter: grayscale(80%);
+    
+            &:hover {filter: grayscale(0%);}
+            &:hover.info-contenedor p{
+                opacity: 100%;
+            }
+        }
+    }   
+    
+    .imagenes-apple {
 
         display: flex;
         flex-direction: row;
         justify-content: center;
-        margin: 4rem 0rem;
+        align-self: center;
     }
-
-    .imagenes_apple img {
-
-        width: 30%;
-        clip-path: circle(48.9% at 50% 50%);
-
-        &:hover {filter: grayscale(80%);}
-    
-    }
-    
-    .multiverso__contenedor__article p strong {
-    
-        font-family: "changa one";
-        font-size: 2rem;
-        color: $red;
-        text-align: center;
-        margin-bottom: 2rem;
-        }
-    
-
-
-
-
-
-
-
-
 
 // MEDIA QUERIES
 
@@ -133,21 +137,53 @@
     }
         
     .multiverso__contenedor {
-    margin: 20px 0px;
+    margin: 10px 0px;
     
     }
 
-    .multiverso__contenedor p {
+    .multiverso__contenedor__article {
+        padding: 0rem;
+    }
 
-    margin: 0px;
-    
+    .multiverso__contenedor__article p {
+        margin: 1rem 0rem;
+        font-size: 1rem;
+        line-height: 1.6rem;
     }
     
-    .multiverso__contenedor__article p strong {
-    
-    text-align: justify;
+    .multiverso__contenedor__article p span {
+    font-size: 3rem;
+    text-align: center;
     margin-bottom: 5rem;
     
     }
 
+    .imagenes {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+
+        & svg {
+            display: none;
+        }
+    }
+
+    .info-contenedor {
+        justify-content: center;
+        align-items: center;
+    
+        & p {
+            font-size: 2.5rem;
+            line-height: 2.5rem;
+            position: relative;
+            bottom: 1rem;
+            padding: 0rem 3rem;
+        }
+
+
+        & img {
+            width: 250px;
+        }
+
+    }
 }

@@ -87,7 +87,7 @@ h2 {
   background-color: #F2F2F2;
   -webkit-box-shadow: 3px 7px 8px 1px rgba(0, 0, 0, 0.25);
           box-shadow: 3px 7px 8px 1px rgba(0, 0, 0, 0.25);
-  padding: 4rem;
+  padding: 2rem;
   margin: 20px;
 }
 
@@ -111,6 +111,7 @@ h2 {
 
 .multiverso p {
   text-align: justify;
+  margin: 0rem 4rem;
 }
 
 .multiverso .multiverso__contenedor {
@@ -163,10 +164,20 @@ h2 {
 .multiverso__contenedor__article p {
   font-size: 1rem;
   line-height: 1.5rem;
+  margin-bottom: 2rem;
   text-align: justify;
 }
 
+.multiverso__contenedor__article p span {
+  font-family: "changa one";
+  font-size: 3rem;
+  color: #990033;
+  text-align: right;
+  margin-bottom: 2rem;
+}
+
 .imagenes {
+  width: 100%;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -180,18 +191,52 @@ h2 {
   margin: 4rem 0rem;
 }
 
-.imagenes img {
-  width: 25%;
-  -webkit-clip-path: circle(48.9% at 50% 50%);
-          clip-path: circle(48.9% at 50% 50%);
+.info-contenedor {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -ms-flex-line-pack: center;
+      align-content: center;
 }
 
-.imagenes img:hover {
+.info-contenedor p {
+  opacity: 100%;
+  font-family: "changa one";
+  color: #990033;
+  font-size: 3rem;
+  text-align: center;
+  line-height: 2.5rem;
+  position: relative;
+  bottom: 3rem;
+  margin: 0rem 2rem;
+}
+
+.info-contenedor img {
+  width: 300px;
+  opacity: 90%;
+  -webkit-clip-path: circle(48.9% at 50% 50%);
+          clip-path: circle(48.9% at 50% 50%);
   -webkit-filter: grayscale(80%);
           filter: grayscale(80%);
 }
 
-.imagenes_apple {
+.info-contenedor img:hover {
+  -webkit-filter: grayscale(0%);
+          filter: grayscale(0%);
+}
+
+.info-contenedor img:hover.info-contenedor p {
+  opacity: 100%;
+}
+
+.imagenes-apple {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -202,26 +247,8 @@ h2 {
   -webkit-box-pack: center;
       -ms-flex-pack: center;
           justify-content: center;
-  margin: 4rem 0rem;
-}
-
-.imagenes_apple img {
-  width: 30%;
-  -webkit-clip-path: circle(48.9% at 50% 50%);
-          clip-path: circle(48.9% at 50% 50%);
-}
-
-.imagenes_apple img:hover {
-  -webkit-filter: grayscale(80%);
-          filter: grayscale(80%);
-}
-
-.multiverso__contenedor__article p strong {
-  font-family: "changa one";
-  font-size: 2rem;
-  color: #990033;
-  text-align: center;
-  margin-bottom: 2rem;
+  -ms-flex-item-align: center;
+      align-self: center;
 }
 
 @media screen and (max-width: 768px) {
@@ -233,14 +260,53 @@ h2 {
     padding: 0.2rem;
   }
   .multiverso__contenedor {
-    margin: 20px 0px;
+    margin: 10px 0px;
   }
-  .multiverso__contenedor p {
-    margin: 0px;
+  .multiverso__contenedor__article {
+    padding: 0rem;
   }
-  .multiverso__contenedor__article p strong {
-    text-align: justify;
+  .multiverso__contenedor__article p {
+    margin: 1rem 0rem;
+    font-size: 1rem;
+    line-height: 1.6rem;
+  }
+  .multiverso__contenedor__article p span {
+    font-size: 3rem;
+    text-align: center;
     margin-bottom: 5rem;
+  }
+  .imagenes {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+  }
+  .imagenes svg {
+    display: none;
+  }
+  .info-contenedor {
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+  }
+  .info-contenedor p {
+    font-size: 2.5rem;
+    line-height: 2.5rem;
+    position: relative;
+    bottom: 1rem;
+    padding: 0rem 3rem;
+  }
+  .info-contenedor img {
+    width: 250px;
   }
 }
 
