@@ -595,7 +595,7 @@ h2 {
     overflow: hidden;
     height: 150vh;
   }
-  .contenedorform {
+  #contacto .contenedorform {
     display: -webkit-box;
     display: -ms-flexbox;
     display: flex;
@@ -610,14 +610,13 @@ h2 {
         -ms-flex-align: center;
             align-items: center;
   }
-  #form-contacto {
-    background-color: #081826;
-    color: #F2F2F2;
-    width: 90%;
-    text-align: center;
-    margin: 20px auto;
+  #contacto .contenedorform img {
+    height: 400px;
+    position: relative;
+    right: 60px;
+    bottom: 70px;
   }
-  .textform {
+  #contacto .contenedorform .textform {
     display: -webkit-box;
     display: -ms-flexbox;
     display: flex;
@@ -630,16 +629,17 @@ h2 {
     width: 80%;
     margin: 20px auto;
   }
-  .textform p {
+  #contacto .contenedorform .textform p {
     text-align: justify;
   }
-  #contacto img {
-    height: 400px;
-    position: relative;
-    right: 60px;
-    bottom: 70px;
+  #contacto .contenedorform #form-contacto {
+    background-color: #081826;
+    color: #F2F2F2;
+    width: 90%;
+    text-align: center;
+    margin: 20px auto;
   }
-  #mensaje {
+  #contacto .contenedorform #form-contacto #mensaje {
     height: 80px;
     width: 200px;
     border-radius: 10px;
