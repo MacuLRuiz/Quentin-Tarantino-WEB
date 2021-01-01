@@ -6,7 +6,7 @@
 .texto h2 {
     font-family: "Changa One";
     font-size: 5rem;
-    color: #990033 ;
+    color: $red ;
     text-align: center;
     letter-spacing: 1px;
     word-spacing: 6px;
@@ -15,10 +15,10 @@
 .texto h3 {
     font-size: 20px;
     margin: 1rem;
-    color: #990033;
+    color: $red;
     text-transform: uppercase;
     font-weight: 800; 
-    background-color: #FFCC33;
+    background-color: $yellow ;
     padding: 1rem;
     border-radius: 10px ;
 }
@@ -34,7 +34,7 @@ h1{
         font-family: 'Changa One';
         font-size: 200px; 
         text-align: center;
-        color:  #990033;
+        color:  $red;
         letter-spacing: 15px;
         line-height: 0;
         text-shadow:7px 0px 0px rgba(255,46,18,0.61);

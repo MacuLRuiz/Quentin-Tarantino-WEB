@@ -16,7 +16,7 @@ footer  {
         }
 
         & p{
-            color:#F2F2F2;
+            color: $white;
             text-align: center;
             padding: 7px   30px;
         }
@@ -32,7 +32,7 @@ footer  {
     display: flex;
     flex-direction: row;
     justify-content: space-around;
-    color:#F2F2F2;
+    color: $white;
 
 } 
 
@@ -41,7 +41,7 @@ footer  {
     display: flex;
     flex-direction: column;
     text-decoration: none;
-    color:#F2F2F2;
+    color: $white;
     
 }
 
@@ -50,7 +50,7 @@ footer  {
 
 
 #menu-final :hover {
-    color:  #FFCC33
+    color:  $yellow;
 }
 
 // MEDIA QUERIES  

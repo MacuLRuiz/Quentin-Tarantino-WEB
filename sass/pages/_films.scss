@@ -1,5 +1,5 @@
 #peliculas  {
-    background-color:#F2F2f2;
+    background-color: $white;
     width: 100%;
     text-align: center;     
 
@@ -68,19 +68,19 @@ align-items: center;
 
 
 .bg-dark {
-    background-color: #081826;
+    background-color: $dark;
 }
 
 .bg-yellow {
-    background-color: #FFCC33;
+    background-color: $yellow;
 } 
 
 .bg-orange {
-    background-color: #F27405;
+    background-color: $orange;
 } 
 
 .bg-red {
-    background-color: #990033;
+    background-color: $red;
 } 
 
 
@@ -88,7 +88,7 @@ align-items: center;
     font-size: 2rem;
     font-family: "Changa One";
     text-align: center;
-    color: #990033;
+    color: $red;
 }
 
 .modal-body iframe {

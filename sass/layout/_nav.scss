@@ -8,7 +8,7 @@
     list-style: none;
     display: flex;
     justify-content: space-evenly;
-    color:#F2F2F2;
+    color: $white;
     width: 100%;
 } 
 
@@ -19,7 +19,7 @@
 
 
 #menu li a {
-    color:#F2F2F2;
+    color: $white;
     text-decoration: none;
     color:#F2F2F2;
 }
@@ -32,7 +32,7 @@ padding-left: 0.5rem;
 }
 
 #menu li :hover {
-    color: #990033
+    color: $red;
 }
 
 #menu li:hover .icono-menu {
