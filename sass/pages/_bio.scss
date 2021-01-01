@@ -13,73 +13,75 @@
     "bio2 foto2"
     "foto3 bio3"
     "bio4 foto4";
-}
 
-.biografia {
-    grid-area: biografia;
-    display: flex;
-    align-items: center;
-    justify-content: center;
+    & .biografia {
+        grid-area: biografia;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+    
+    }
 
-}
-.bio1 {
-    grid-area: bio1;
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
-    padding: 4rem;
-    margin-bottom: 50px;
-
-    & p {
-        text-align: justify;
+    & .bio1 {
+        grid-area: bio1;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        padding: 4rem;
+        margin-bottom: 50px;
+    
+        & p {
+            text-align: justify;
+        }
+    }
+    
+    & .bio2 {
+        grid-area: bio2;
+        @extend .bio1;
+    }
+    
+    & .bio3 {
+        grid-area: bio3;
+        @extend .bio1;
+    
+    }
+    
+    & .bio4 {
+        grid-area: bio4;
+        @extend .bio1;
+    }
+    
+    
+    
+    & .foto1 {
+        grid-area: foto1;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        margin-bottom: 50px;
+    }
+    
+    & .foto2 {
+        grid-area: foto2;
+        @extend .foto1;
+    
+    
+    }
+    
+    & .foto3 {
+        grid-area: foto3;
+        @extend .foto1;
+    
+    }
+    
+    & .foto4 {
+        grid-area: foto4;
+        @extend .foto1;
     }
 }
 
-.bio2 {
-    grid-area: bio2;
-    @extend .bio1;
-}
-
-.bio3 {
-    grid-area: bio3;
-    @extend .bio1;
-
-}
-
-.bio4 {
-    grid-area: bio4;
-    @extend .bio1;
-}
-
-
-
-.foto1 {
-    grid-area: foto1;
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
-    margin-bottom: 50px;
-}
-
-.foto2 {
-    grid-area: foto2;
-    @extend .foto1;
-
-
-}
-
-.foto3 {
-    grid-area: foto3;
-    @extend .foto1;
-
-}
-
-.foto4 {
-    grid-area: foto4;
-    @extend .foto1;
-}
 
 
 
@@ -92,28 +94,26 @@
         flex-direction: column;
         grid-area: unset;
 
-    }
+        &.biografia {
+            display: flex;
+            align-items: center;
+            justify-content: center;
+        }
 
-    .biografia {
-        display: flex;
-        align-items: center;
-        justify-content: center;
+        .bio1 {
+            padding: 2rem;
+            margin-bottom: 20px;
+        }
+    
+    
+        .foto1 {
+            margin-bottom: 25px;
+        }
+    
+        .foto1 img {
+            width: 70%;
+        }
 
-    }
-
-
-    .bio1 {
-        padding: 2rem;
-        margin-bottom: 20px;
-    }
-
-
-    .foto1 {
-        margin-bottom: 25px;
-    }
-
-    .foto1 img {
-        width: 70%;
     }
     
 }

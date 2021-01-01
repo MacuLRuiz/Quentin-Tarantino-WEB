@@ -1,5 +1,6 @@
 
 .multiverso {
+
     width: 100%;
     padding:    2rem;
     display: flex;
@@ -12,27 +13,7 @@
         margin: 0rem 4rem;
     }
 
-    
-    & .multiverso__contenedor {
-    width: 100%;
-    display: flex;
-    flex-direction: row;
-    justify-content: space-evenly;
-    align-items: center;
-    flex-wrap: wrap;
-    margin: 40px 0px;
-
-        & .multiverso__contenedor__article {
-            @extend %article-multiverso;
-        }
-    } 
-
-        
-}
-
-
-
-    .universo {
+    & .universo {
         background-color: $dark;
         width: 400px;
         height: 400px;
@@ -54,135 +35,150 @@
     
     }
 
+    
+    & .multiverso__contenedor {
+    width: 100%;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-evenly;
+    align-items: center;
+    flex-wrap: wrap;
+    margin: 40px 0px;
 
-    .multiverso__contenedor__article p {
+        & .multiverso__contenedor__article {
+            @extend %article-multiverso;
 
-        font-size: 1rem;
-        line-height: 1.5rem;
-        margin-bottom: 2rem;
-        text-align: justify;
+            & p {
 
-        & span {
-            font-family: "changa one";
-            font-size: 3rem;
-            color: $red;
-            text-align: right;
-            margin-bottom: 2rem;
+                font-size: 1rem;
+                line-height: 1.5rem;
+                margin-bottom: 2rem;
+                text-align: justify;
+        
+                & span {
+                    font-family: "changa one";
+                    font-size: 3rem;
+                    color: $red;
+                    text-align: right;
+                    margin-bottom: 2rem;
+                }
             }
-    
-    }
 
+            & .imagenes {
+                width: 100%;
+                display: flex;
+                flex-direction: row;
+                justify-content: space-between;
+                margin: 1rem 0rem;
+            }
+        
+            .info-contenedor {
+                display: flex;
+                flex-direction: column;
+                justify-content: center;
+                align-content: center;
+                margin: 0rem 2rem;
+            
+                & p {
+                    opacity: 100%;
+                    font-family: "changa one";
+                    color: $red;
+                    font-size: 3rem;
+                    text-align: center;
+                    line-height: 2.5rem;
+                    position: relative;
+                    bottom: 3rem;
+                    margin: 0rem 3rem;
+                }
+        
+                & img {
+            
+                    width: 300px;
+                    opacity: 90%;
+                    clip-path: circle(48.9% at 50% 50%);
+                    filter: grayscale(80%);
+            
+                    &:hover {filter: grayscale(0%);}
+                }
+            }   
+            
+            & .imagenes-apple {
+        
+                display: flex;
+                flex-direction: row;
+                justify-content: center;
+                align-self: center;
+                padding-bottom: 4rem;
 
-    .imagenes {
-        width: 100%;
-        display: flex;
-        flex-direction: row;
-        justify-content: space-between;
-        margin: 1rem 0rem;
-    }
-
-    .info-contenedor {
-        display: flex;
-        flex-direction: column;
-        justify-content: center;
-        align-content: center;
-        margin: 0rem 2rem;
-    
-        & p {
-            opacity: 100%;
-            font-family: "changa one";
-            color: $red;
-            font-size: 3rem;
-            text-align: center;
-            line-height: 2.5rem;
-            position: relative;
-            bottom: 3rem;
-            margin: 0rem 3rem;
+                & img {
+                    width: 250px;
+                }
+            }
         }
+    }        
+}
 
-        & img {
-    
-            width: 300px;
-            opacity: 90%;
-            clip-path: circle(48.9% at 50% 50%);
-            filter: grayscale(80%);
-    
-            &:hover {filter: grayscale(0%);}
-        }
-    }   
-    
-    .imagenes-apple {
-
-        display: flex;
-        flex-direction: row;
-        justify-content: center;
-        align-self: center;
-        padding-bottom: 4rem;
-    }
 
 // MEDIA QUERIES
 
 
 @media screen and (max-width: 768px) {
 
-    .universo {
-        width: 300px;
-        height: 300px;
-    }
-
     .multiverso {
     padding:    0.2rem;
 
-    }
-        
-    .multiverso__contenedor {
-    margin: 10px 0px;
-    
-    }
-
-    .multiverso__contenedor__article {
-        padding: 0rem;
-    }
-
-    .multiverso__contenedor__article p {
-        margin: 1rem 0rem;
-        font-size: 1rem;
-        line-height: 1.6rem;
-    }
-    
-    .multiverso__contenedor__article p span {
-    font-size: 3rem;
-    text-align: center;
-    margin-bottom: 5rem;
-    
-    }
-
-    .imagenes {
-        display: flex;
-        flex-direction: column;
-        justify-content: center;
-
-        & svg {
-            display: none;
-        }
-    }
-
-    .info-contenedor {
-        justify-content: center;
-        align-items: center;
-    
-        & p {
-            font-size: 2.5rem;
-            line-height: 2.5rem;
-            position: relative;
-            bottom: 1rem;
-            padding: 0rem 3rem;
+        & .universo {
+            width: 300px;
+            height: 300px;
         }
 
+        & .multiverso__contenedor {
+            margin: 10px 0px;
 
-        & img {
-            width: 250px;
+            & .multiverso__contenedor__article {
+                padding: 2rem;
+
+                & p {
+                    margin: 1rem 0rem;
+                    font-size: 1rem;
+                    line-height: 1.6rem;
+
+                    & span {
+                        font-size: 3rem;
+                        text-align: center;
+                        margin-bottom: 5rem;
+                        
+                    }
+                }
+
+                & .imagenes {
+                    display: flex;
+                    flex-direction: column;
+                    justify-content: center;
+            
+                    & svg {
+                        display: none;
+                    }
+            
+                    & .info-contenedor {
+                        justify-content: center;
+                        align-items: center;
+                        margin-bottom: 3rem;
+                    
+                        & p {
+                            font-size: 2.5rem;
+                            line-height: 2.5rem;
+                            position: relative;
+                            bottom: 0rem;
+                            padding: 0rem 3rem;
+                        }
+                
+                        & img {
+                            width: 250px;
+                        }
+                    }
+                }
+            } 
         }
-
     }
 }

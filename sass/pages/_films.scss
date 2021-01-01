@@ -1,48 +1,52 @@
 #peliculas  {
     background-color:#F2F2f2;
     width: 100%;
-    text-align: center;     
+    text-align: center;
+
+    & .h2 {
+        grid-area: h2;
+    }
+    
+    & #cinta {
+        width: 70%;
+        grid-area: cinta;
+    }
+
+    .container-carousel {
+        width: 100%;
+        height: 120vh;
+    
+        display: grid;
+        grid-template-columns: 70% 30%;
+        grid-template-rows: 30% 70%;
+        grid-template-areas: 
+        "h2 cinta"
+        "carousel cinta";
+        overflow: hidden ;
+        justify-content: flex-start;
+        align-items: center;
+
+        & #carouselExampleControls {
+            width: 100%;
+            grid-area: carousel;
+            position: relative;
+            bottom: 3rem;
+        
+            & .carousel-control-next-icon {
+                color: red;
+            }
+        
+        }
+    }
 
 }
 
-.container-carousel {
-    width: 100%;
-    height: 120vh;
-
-    display: grid;
-    grid-template-columns: 70% 30%;
-    grid-template-rows: 30% 70%;
-    grid-template-areas: 
-    "h2 cinta"
-    "carousel cinta";
-    overflow: hidden ;
-    justify-content: flex-start;
-    align-items: center;
-
-}
-
-#cinta {
-    width: 70%;
-    grid-area: cinta;
-
-}
 
 
-#carouselExampleControls {
-    width: 100%;
-    grid-area: carousel;
-    position: relative;
-    bottom: 3rem;
 
-}
 
-.carousel-control-next-icon {
-    color: red;
-}
 
-.h2 {
-    grid-area: h2;
-}
+
 
 #film-container {
 width: 100%;
@@ -51,25 +55,23 @@ flex-direction: row;
 flex-wrap: wrap;
 justify-content: center;
 align-items: center;
+
+    .film  {
+        width: 400px ;
+        height: 300px;
+        overflow: hidden;
+        display: flex;
+        justify-content: center;
+        align-content: center;
+        border-radius: 20px;
+        margin: 0 20px 40px;
+        box-shadow: 3px 7px 8px 1px rgba(0,0,0,0.35);
+
+        &:hover {
+            opacity: 60%;
+        }
+    }
 }
-
-
-.film  {
-width: 400px ;
-height: 300px;
-overflow: hidden;
-display: flex;
-justify-content: center;
-align-content: center;
-border-radius: 20px;
-margin: 0 20px 40px;
-box-shadow: 3px 7px 8px 1px rgba(0,0,0,0.35);
-}
-
-.film:hover {
-    opacity: 60%;
-}
-
 
 .bg-dark {
     background-color: #081826;
@@ -85,7 +87,7 @@ box-shadow: 3px 7px 8px 1px rgba(0,0,0,0.35);
 
 .bg-red {
     background-color: #990033;
-} 
+}
 
 
 .modal-title {
@@ -115,30 +117,24 @@ box-shadow: 3px 7px 8px 1px rgba(0,0,0,0.35);
         display: flex;
         flex-direction: column;
         height: 500px;
+
+        & h2 {
+            font-size: 50px;
+        }
     }
 
-    .container-carousel h2 {
-        font-size: 50px;
-    }
 
     #cinta {
         display: none;
     }
 
-    #carouselExampleControls {
-        width: 100%;
-        grid-area: carousel;
-    
-    }
-
-    .film{
-        width: 90%;
-    }
-
     .film-container {
         flex-direction: column;
-    }
 
+        & .film{
+            width: 90%;
+        }
+    }
 }
 
 
@@ -147,5 +143,13 @@ box-shadow: 3px 7px 8px 1px rgba(0,0,0,0.35);
     iframe {
         width: 360px;
         height: 215px;
+    }
+}
+
+@media screen and (max-width: 320px) {
+
+    iframe {
+        width: 260px;
+        height: 115px;
     }
 }
