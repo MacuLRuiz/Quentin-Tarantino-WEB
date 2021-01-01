@@ -14,15 +14,16 @@ footer  {
             justify-content: center;
             align-items: center;    
         }
+
+        & p{
+            color:#F2F2F2;
+            text-align: center;
+            padding: 7px   30px;
+        }
 }
 
-.alinear p{
-    color:#F2F2F2;
-    text-align: center;
-    padding: 7px   30px;
-}
 
-
+// MENÚ FINAL
 
 #menu-final ul {
     width: 500px;
@@ -45,7 +46,6 @@ footer  {
 }
 
 
-
 // HOVER
 
 
@@ -62,3 +62,15 @@ footer  {
     }
 
 }
+
+@media screen and (max-width: 375px) {
+    footer {
+        font-size: 12px;
+    }
+
+    #menu-final ul {
+        width: 250px;
+    }
+
+}
+

@@ -122,7 +122,7 @@
 // MEDIA QUERIES
 
 
-@media screen and (max-width: 768px) {
+@media screen and (max-width: 768px) and (min-width: 375px) {
 
     .multiverso {
     padding:    0.2rem;
@@ -182,3 +182,67 @@
         }
     }
 }
+
+
+@media screen and (max-width: 375px) {
+    .multiverso {
+        padding:    0rem;
+    
+            & .universo {
+                width: 200px;
+                height: 200px;
+            }
+
+            & p {
+                margin: 16px;
+            }
+    
+            & .multiverso__contenedor {
+                margin: 10px 0px;
+    
+                & .multiverso__contenedor__article {
+                    padding: 1rem;
+    
+                    & p {
+                        margin: 1rem 0rem;
+                        font-size: 1rem;
+                        line-height: 1.6rem;
+    
+                        & span {
+                            font-size: 2rem;
+                            margin-bottom: 5rem;
+                            
+                        }
+                    }
+    
+                    & .imagenes {
+                        display: flex;
+                        flex-direction: column;
+                        justify-content: center;
+                
+                        & svg {
+                            display: none;
+                        }
+                
+                        & .info-contenedor {
+                            justify-content: center;
+                            align-items: center;
+                            margin-bottom: 3rem;
+                        
+                            & p {
+                                font-size: 2rem;
+                                line-height: 2rem;
+                                position: relative;
+                                bottom: 0rem;
+                                padding: 0rem 3rem;
+                            }
+                    
+                            & img {
+                                width: 200px;
+                            }
+                        }
+                    }
+                } 
+            }
+        }
+    }

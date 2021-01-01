@@ -1,8 +1,10 @@
+
+
 header{
     width: 100%;
     height: 100vh; 
     overflow: hidden; 
-    background: linear-gradient(to right, rgb(255, 179, 71), rgb(255, 204, 51));
+    background: $gradient
 
 }
 
@@ -39,38 +41,38 @@ z-index: 1;
         flex-direction: column;
         justify-items: center;
         align-items: center;
+
+        & h1{
+            display:  none;
+        }
     }
 
-    .centrado h1{
-        display:  none;
-    }
+
 
     .titulo-ppal {
         width: 100%;;
         display: flex;
         flex-direction: column;
         justify-self: space-evenly;
+
+        & p {
+            font-size: 100px;
+            letter-spacing: normal;
+            font-family: 'Changa One';
+            text-align: center;
+            color:  #990033;
+            letter-spacing: 10px;
+            line-height: 0;
+            text-shadow:7px 0px 0px rgba(255,46,18,0.61);
+            margin: 2.1rem;
+        } 
+    }
         
-    }
-
-    .titulo-ppal p {
-
-        font-size: 100px;
-        letter-spacing: normal;
-        font-family: 'Changa One';
-        text-align: center;
-        color:  #990033;
-        letter-spacing: 10px;
-        line-height: 0;
-        text-shadow:7px 0px 0px rgba(255,46,18,0.61);
-        margin: 2.1rem;
-    }
 
     .portada img {
         width: 600px;
         position: relative;
         top: 1rem;
     }
-
 
 }

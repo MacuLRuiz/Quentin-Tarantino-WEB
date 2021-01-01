@@ -4,33 +4,24 @@
     display: flex;
     justify-content: center;
     align-items: center;
+
+    & p {
+        min-height: 5em;
+        padding   : 1em 4em;
+        position  : relative;
+        text-align: center;
+        font-size: 20px;
+        color: white;
+        white-space: pre-line;
+        line-height: 40px;
+        margin: 4rem;
+        position: relative;
+        bottom: 1rem;
+        
+    }
 }
 
-// .frase p {
-//     text-align: center;
-//     font-size: 20px;
-//     color: white;
-//     white-space: pre-line;
-//     line-height: 40px;
-//     margin: 4rem;
-//   
-// }
 
-
-.frase p {
-    min-height: 5em;
-    padding   : 1em 4em;
-    position  : relative;
-    text-align: center;
-    font-size: 20px;
-    color: white;
-    white-space: pre-line;
-    line-height: 40px;
-    margin: 4rem;
-    position: relative;
-    bottom: 1rem;
-    
-}
 
 
 .frase::before,
@@ -64,19 +55,18 @@
     .frase  {
         height: 30vh;
         overflow: hidden;
-    }
 
-    .frase p {
-        text-align: center;
-        font-size: 1rem;
-        line-height: 30px;
-        white-space: pre-line;
-        margin: 0px;
-        
-    }
+        & p {
+            text-align: center;
+            font-size: 1rem;
+            line-height: 30px;
+            white-space: pre-line;
+            margin: 0px;
 
-    .frase p strong {
-        margin-top: 1rem;
+            & strong {
+                margin-top: 1rem;
+            }
+        }
     }
 
     .frase::before,
@@ -84,4 +74,13 @@
     display: none;
     }
 
+}
+
+
+
+@media screen and (max-width: 375px) {
+
+    .frase p {
+        font-size: 12px;   
+    }
 }
