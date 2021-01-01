@@ -19,6 +19,13 @@
     justify-content: flex-start;
     align-items: center;
 
+    & #cinta {
+        width: 300px;
+        position: relative;
+        top: 15rem;
+    }
+
+
     & #carouselExampleControls {
         width: 100%;
         grid-area: carousel;

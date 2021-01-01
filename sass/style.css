@@ -431,6 +431,12 @@ h2 {
           align-items: center;
 }
 
+.container-carousel #cinta {
+  width: 300px;
+  position: relative;
+  top: 15rem;
+}
+
 .container-carousel #carouselExampleControls {
   width: 100%;
   -ms-grid-row: 2;
